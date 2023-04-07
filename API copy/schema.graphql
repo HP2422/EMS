@@ -1,0 +1,34 @@
+scalar GraphQLDate
+
+type Employee {
+    id: String
+    firstName: String!
+    lastName: String!
+    age: String!
+    dateOfJoining: GraphQLDate
+    title: String!
+    department:String
+    employeeType:String!
+    currentStatus:Int
+}
+
+input EmployeeInputs{
+    id: String
+    firstName: String!
+    lastName: String!
+    age: String!
+    dateOfJoining: GraphQLDate
+    title: String!
+    department:String
+    employeeType:String!
+    currentStatus:Int
+}
+
+##### Top Level declarations
+type Query {
+    employeeList(employeeType: String): [Employee!]!
+}
+type Mutation {
+    emplyeeAdd(employee: EmployeeInputs!): Employee
+    employeeDelete(id: String): Employee
+}

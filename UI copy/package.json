@@ -1,0 +1,50 @@
+{
+  "name": "assignment_harshkumarpatel_ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "#compile": "babel src --out-dir public --presets @babel/react",
+    "#watch": "babel src --out-dir public --watch --verbose --presets @babel/react",
+    "start": "nodemon -w server.js -w .env server.js",
+    "compile": "webpack --mode production",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harsh",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.16",
+    "@mui/material-next": "^6.0.0-alpha.80",
+    "@mui/styled-engine-sc": "^5.11.11",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^5.2.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "mdb-react-ui-kit": "^6.0.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-router-bootstrap": "^0.26.2",
+    "react-router-dom": "^6.9.0",
+    "styled-components": "^5.3.9",
+    "url-search-params": "^1.1.0",
+    "whatwg-fetch": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "nodemon": "^2.0.22",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-middleware": "^6.0.2",
+    "webpack-hot-middleware": "^2.25.3"
+  }
+}
