@@ -65,15 +65,13 @@ export default class EmployeeDirectory extends React.Component {
     }
   }
   render() {
-    console.log(this.state.employee);
-    console.log("this.state.employee");
     return (
       <React.Fragment>
         <EmployeeFilter />
         <h3><FormLabel>Employee Directory is Called.</FormLabel></h3>
         <EmployeeSearch />
         <EmployeeTable employees={this.state.employee} />
-        <EmployeeCreate a_Employee={this.a_Employee} />
+        
       </React.Fragment>
     );
   }

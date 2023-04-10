@@ -16,9 +16,11 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.11.16",
     "@mui/material-next": "^6.0.0-alpha.80",
     "@mui/styled-engine-sc": "^5.11.11",
+    "@mui/styles": "^5.11.1",
     "babel-polyfill": "^6.26.0",
     "bootstrap": "^5.2.3",
     "dotenv": "^16.0.3",
